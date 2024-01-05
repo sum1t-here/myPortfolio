@@ -1,18 +1,11 @@
-import {
-  Blogs,
-  Contacts,
-  Home,
-  Navbar,
-  Portfolio,
-  Services,
-} from './components';
+import { Blogs, Contacts, Home, Navbar, Portfolio, About } from './components';
 
 function App() {
   return (
     <div>
       <Navbar />
       <Home />
-      <Services />
+      <About />
       <Portfolio />
       <Blogs />
       <Contacts />
