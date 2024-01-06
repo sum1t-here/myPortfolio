@@ -1,4 +1,12 @@
-import { Blogs, Contacts, Home, Navbar, Portfolio, About } from './components';
+import {
+  Blogs,
+  Contacts,
+  Home,
+  Navbar,
+  Portfolio,
+  About,
+  Footer,
+} from './components';
 
 function App() {
   return (
@@ -9,7 +17,7 @@ function App() {
       <Portfolio />
       <Blogs />
       <Contacts />
-      <h1 className='text-yellow-300 bg-slate-700'>Hello World</h1>
+      <Footer />
     </div>
   );
 }
