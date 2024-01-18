@@ -2,10 +2,10 @@ import logo from '../assets/logo.png';
 
 function Home() {
   return (
-    <section>
-      <div className='bg-gray-950 h-screen w-full flex justify-center items-center gap-8'>
-        <div className=' flex justify-center items-center lg:flex-col'>
-          <div className='hero-section'>
+    <section className='flex flex-col justify-center items-center'>
+      <div className='bg-gray-950 h-screen w-full flex flex-col lg:flex-row justify-center items-center lg:gap-8'>
+        <div className='flex flex-col p-3 lg:w-1/2'>
+          <div className='hero-section p-5 text-center'>
             <p className='text-yellow-400 text-3xl lg:text-7xl'>Hello</p>
             <p className='text-white lg:text-3xl'>
               I'm{' '}
@@ -13,17 +13,19 @@ function Home() {
               Mazumdar
             </p>
             <p className='text-sm text-yellow-400 lg:text-3xl'>
-              Full Stack Web Devloper
+              Full Stack Web Developer
             </p>
           </div>
-          <button className='bg-sky-500 rounded-3xl text-xs ml-6 w-20 hover:bg-sky-700 lg:mt-8 lg:text-sm lg:w-28'>
-            Download <br />
-            Resume
+          <button className='bg-sky-500 hover:bg-blue-600 h-10 w-25 rounded-3xl text-xs mt-4 lg:mt-8 lg:text-sm lg:w-28'>
+            Download Resume
           </button>
         </div>
-        <div className='p-10'>
-          <img src={logo} alt='' className='h-30 w-30 rounded-full' />
-        </div>
+
+        <img
+          src={logo}
+          alt=''
+          className='w-40 h-40 md:w-36 md:h-36 lg:w-60 lg:h-64 rounded-full border-slate-100 border shadow-md mt-4 lg:mt-0'
+        />
       </div>
     </section>
   );
