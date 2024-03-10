@@ -1,5 +1,3 @@
-import logo from '../assets/logo.png';
-
 function Home() {
   return (
     <section className='flex flex-col justify-center items-center'>
@@ -20,12 +18,6 @@ function Home() {
             Download Resume
           </button>
         </div>
-
-        <img
-          src={logo}
-          alt=''
-          className='w-40 h-40 md:w-36 md:h-36 lg:w-60 lg:h-64 rounded-full border-slate-100 border shadow-md mt-4 lg:mt-0'
-        />
       </div>
     </section>
   );
